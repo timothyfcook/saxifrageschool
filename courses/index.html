@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta property="og:image" content="images/logo.png" />
+<meta property="og:url" content="http://www.saxifrageschool.org" />
+<meta property="og:description" content=" Higher Education Deconstructed. Learn to learn to Build, Program and Grow; ask big questions and discover what you love to do." />
+<meta property="og:title" content="The Saxifrage School" />-->
+
+<title>The Saxifrage School - Higher Ed. Deconstructed</title>
+
+<!-- http://t.co/dKP3o1e --> 
+<meta name="HandheldFriendly" content="True"> 
+<meta name="MobileOptimized" content="320"> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+<link href="/css/nivo-slider.css" type="text/css" rel="stylesheet">
+<link href="/css/prettyPhoto.css" type="text/css" rel="stylesheet">
+<link href="/css/tipsy.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/js/libs/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="/js/libs/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="/js/libs/modernizr-1.7.min.js"></script>
+<script type="text/javascript" src="/js/libs/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="/js/libs/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="/js/libs/jquery.visualNav.min.js"></script>
+<script type="text/javascript" src="/js/libs/jquery.quicksand.js"></script>
+<script type="text/javascript" src="/js/libs/jquery.tipsy.js"></script>
+<script type="text/javascript" src="/js/libs/jquery.livetwitter.min.js"></script>
+<!-- fancybox -->
+<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+    google.setOnLoadCallback(initialize);
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/tumblr/EJwT");
+      feed.setNumEntries(6);
+      feed.setResultFormat(google.feeds.Feed.JSON_FORMAT);
+      feed.load(function(result) {
+        // $.each(result.feed.entries, function(){
+        //     $("section#blog div.center").appendChild("<div>this is stuff</div>");
+        //     // console.log("eq: "+);
+        //     console.log($(this));
+        //   });
+        if (!result.error) 
+              {
+           var container = document.getElementById("blogfeed");
+
+          for (var i = 0; i < result.feed.entries.length; i++) 
+          {  
+            var entry = result.feed.entries[i];
+            var last = "";
+            if ((i+1) % 3 == 0) {
+              last = " last";
+            }
+            var article = document.createElement("article");
+            article.innerHTML = '<div class="blog_entry one_third'+ last +'"><h3><a href="' + entry.link + '">' + entry.title + '</a><cite> ' + entry.author + '</cite></h3><p>' + entry.contentSnippet + '</p></div>';
+            container.appendChild(article);
+          }
+        }
+      });
+    }
+
+    </script>
+
+<link rel="stylesheet" type="text/css" href="/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+</head>
+
+<body>
+<div id="page">
+  <header id="header">
+    <div class="center">
+      <nav id="main-menu">
+        <ul>
+          <li><a class="menu" href="#home">Home</a></li>
+          <li><a class="menu" href="#courses">Courses</a></li>
+          <li><a class="menu" href="#summerforum">Saxifrage Forum</a></li>
+          <li><a class="menu" href="#crashcourse">Crash Course</a></li>
+           <li class="logo-wrap"><a href="#home" id="logo" title="Hero"><img src="/images/logo.png"  alt="Hero" width="50" height="50" /></a></li>
+          <li><a class="menu" href="#lectures">Lectures</a></li>
+          <li><a class="menu" href="#about">About</a></li>
+          <li><a class="menu" href="#team">The Team</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a class="menu" href="#blog">blog</a></li>
+        </ul>
+        <h1>The Saxifrage School</h1>
+      </nav>
+      <ul id="filter" class="mobile-ipad-menu">
+        <li><a class="menu" href="#home">Home</a></li>
+        <li><a class="menu" href="#courses">Courses</a></li>
+        <li><a class="menu" href="#summerforum">Summer Forum</a></li>
+        <li><a class="menu" href="#crashcourse">Crash Course</a></li>
+        <li class="logo-wrap"><a href="#home" id="logo" title="Hero"><img src="/images/logo.png"  alt="Hero" width="50" height="50" /></a></li>
+        <li><a class="menu" href="#lectures">Lectures</a></li>
+        <li><a class="menu" href="#about">About</a></li>
+        <li><a class="menu" href="#contact">Contact</a></li>
+        <li><a class="menu" href="https://donate.saxifrageschool.org">Donate</a></li>
+        <li><a href="http://saxifrageschool.wordpress.com">blog</a></li>
+      </ul>
+      <!-- /END nav -->
+      <div class="clear"></div>
+    </div>
+  </header>
+  <!-- /END header-->
+  <section id="home" class="content first_content">
+    <div class="center">
+        <h1 id="intro" style="margin-bottom:-.05em">
+        The Saxifrage School is redesigning higher education by lowering costs, re-thinking the campus, and reconciling theory and practice. We teach students to make what is valuable <em> and </em> to question the value of what is made.
+        </h1>
+<!-- Begin MailChimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="http://saxifrageschool.us5.list-manage1.com/subscribe/post?u=1a512028b208a111fcf2165f7&amp;id=e0a2dc0e55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <label for="mce-EMAIL">Subscribe and stay updated about our work:</label>
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+
+      <div class="clear"></div>
+      <div id="slider_wrap">
+        <div id="slider" class="nivoSlider"> <img src="/images/slider_1.png" alt="" /> <img src="/images/slider_2.png" alt="" /> <img src="/images/slider_3.png" alt="" /> </div>
+      </div>
+
+      <div id="services">
+        <h2 class="title"><span>Our Programs</span></h2>
+        <div class="columns">
+          <div class="one_fourth">
+            <div class="title_header"><img id="icon" src="/images/bomb.svg">
+              <h2><a href="#crashcourse">Crash Course</a></h2>
+            </div>
+            <p>Take a summer, learn to Build, Program, Grow, and discover what you love to do. This eight-week intensive program offers students ages 16-60 a diverse and powerful education in productive inquiry.  </p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/construction.svg">
+              <h2><a href="/build.html">Build</a></h2>
+            </div>
+            <h5>Spots are available for our Spring, 2013 twelve-week course.</h5><p>Learn both to Design and Build furniture and small structures. Projects may include the construction of a houseboat, bioshelter, tiny-home, or chicken coop. Study the history, philosophy and economics of residential construction and permaculture carpentry practices.</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/computer.svg">
+              <h2><a href="/program.html">Program</a></h2>
+            </div>
+            <h5>Spots are available for our Spring, 2013 twelve-week course.</h5><p>The theory and practice of Web Development for beginners. Join us for a single course, or a full-time, twelve-week boot camp. Topics will include: HTML5, CSS3, Python, Git, UX, Open-Source philosophy, Hacker culture, and human-computer interaction.</p>
+          </div>
+          <div class="one_fourth last">
+            <div class="title_header"><img src="/images/leaf.svg">
+              <h2><a href="/grow.html">Grow</a></h2>
+            </div>
+            <h5>Spots are available for our Spring, 2013 twelve-week course.</h5><p>The theory and practice of organic agriculture for beginners. Join us for a single course, or a full-time, twelve-week boot camp. Topics will include: composting, enivornmental ethics, soil science, food politics, companion planting, crop rotation, planting, pest/disease control, seed saving, permaculture, and season extension. </p>
+          </div>
+          <div class="clear"></div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/meeting.svg">
+              <h2><a href="#about">Saxifrage 101</a></h2>
+            </div>
+            <p>Once a month we open to the public: free pie, drinks, and a conversation about our work and the future of higher education. 2nd Mondays, 7:00 pm @ 5452 Penn Avenue</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/logo.png">
+              <h2><a href="#summerforum">Saxifrage Forum</a></h2>
+            </div>
+            <p>A week-long, thematic academic residency. Join us for close readings and discussions on the Past and Future of Education. August, 2013. Applications open soon. 
+              <!--In partnership with <a href:"http://summerforum.org">summerforum.org</a></p> -->
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/tree.svg">
+              <h2><a href="#gapyear">The Gap Year</a></h2>
+            </div>
+            <p>Take a year, learn to Build, Program, Grow, speak Spanish and discover what you love to do. Before you get a diploma, get some experience. Make what is valuable and question the value of what is made. </p>
+          </div>
+          <div class="one_fourth last">
+            <div class="title_header"><img src="/images/lecturer.svg">
+              <h2><a href="#lectures">Lectures</a></h2>
+            </div>
+            <p>Once a month we're holding <strong>Pie + Talk</strong>, a lecture series on theory and practice. Fourth Mondays, 7:00 pm at Voluto (Commonplace) Coffee </p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!-- /END #services--> 
+    </div>
+    <!-- /END .center--> 
+  </section>
+  <!-- /END #home-->
+
+
+  <!-- /BEGIN #about-->
+<section id="donate" class="content">
+<div class="center" align="center">
+        <h2 class="title"><span>Support Our Work</span></h2>
+        <h3>If you would like to become a monthly supporter of the Saxifrage School, please go to our micro-funding campaign at <a href="https://www.givepi.com">www.givepi.com</h3></a><br />
+
+        <h2>For traditional or one-time donations, go to <a href="https://donate.saxifrageschool.org">donate.saxifrageschool.org</a></h2>
+         <a href="https://www.givepi.com"><img align="center" width="40%" height="40%" src="/images/givepi.png" /></a>
+        <img align="center" src="/images/explanation.png" />
+
+      </div>
+      </section>
+  <!-- /END #about-->
+
+
+
+  <!-- /BEGIN #about-->
+<section id="about" class="content">
+<div class="center" align="center">
+        <h2 class="title"><span>Learn About the Saxifrage School</span></h2>
+        <h3>Join us for one of our monthly public meetings. <br /> Our "Saxifrage 101" gatherings offer a chance to learn about our work and join our open conversation on the future of higher education.<a href=http://www.facebook.com/events/178406535627733/> RSVP on Facebook </a>  or e-mail tim@saxifrageschool.org</h3>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/HB76B-u9Oyk?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      </section>
+  <!-- /END #about-->
+
+  <!-- /BEGIN #courses-->
+  <section id="courses" class="content">
+    <div class="center">
+      <h2 class="title"><span>Our Courses</span></h2>
+      <ul class="splitter">
+        <li><span>Filter by type:</span>
+          <ul>
+            <li class="segment-0 selected-0"><a href="#" data-value="all">All</a></li>
+            <li class="segment-1"><a href="#" data-value="summer">Summer</a></li>
+            <li class="segment-2"><a href="#" data-value="year-long">Year-Long</a></li>
+            <li class="segment-3"><a href="#" data-value="one-time">Events & Lectures</a></li>
+            <li class="segment-4"><a href="#" data-value="twelve-week">Twelve-Week</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="demo"> 
+        <!--read the documentation to understand what's going on here -->
+        <ul id="list" class="grid-list">
+          
+          <li data-id="id-1" class="summer"><a href="#crashcourse" rel="image_group"><img src="/images/crashcourse_2013.png" alt="Summer Crash Course" /></a> </li>
+
+          <li data-id="id-2" class="year-long" ><a href="#gapyear" rel="image_group"><img src="/images/gapyear.png" alt="The Gap Year" /></a> </li>
+
+          <li data-id="id-3" class="twelve-week"><a href="/program.html" rel="image_group"><img src="/images/program_2013.png" alt="Web Development" /></a> </li>
+
+          <li data-id="id-4" class="twelve-week" ><a href="/build.html" rel="image_group"><img src="/images/build_2013.png" alt="Carpentry and Design" /></a> </li>
+
+          <li data-id="id-5" class="twelve-week"><a href="/grow.html" rel="image_group"><img src="/images/grow_2013.png" alt="Organic Agriculture" /></a> </li>
+
+          <li data-id="id-6" class="summer"><a href="#summerforum" rel="image_group"><h1 style="padding-top:50px; text-align:center; color:#3164CF; ">Saxifrage Forum</h1><!--<img src="images/summerforum_2013.png" alt="Summer Forum" /></a>--> </li>
+
+          <li data-id="id-7" class="one-time"><a href="#lectures" rel="image_group"><img src="/images/lectures2_2013.png" alt="Pie + Talk" /></a> </li>
+
+          <li data-id="id-8" class="one-time"><a href="#about" rel="image_group"><img src="/images/saxifrage101.png" alt="Saxifrage 101" /></a> </li>
+
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="clear"></div>
+    </div>
+    <!-- /END .center--> 
+  </section>
+  <!-- /END #courses-->
+
+
+  <!-- /BEGIN #crashcourse-->
+  <section id="crashcourse" class="content">
+    <div class="center">
+      <h2 class="title"><span>Summer Crash Course</span></h2><h3 class="centered">
+Do not merely study: live life earnestly.<br /> More information coming soon. </h3>
+<p>
+The Crash Course, coming Summer 2013. An eight-week program for students ages 15 and Up. Students learn the basics of three major skills sets (Carpentry, Programming, and Farming), while thinking critically and creatively about complex problems in real-world contexts. Students will be challenged to reconcile theory with practice, learning not just to critique, but to invent. June 24 - August 16</p>
+
+<h1 class="apply"><a href="/crashcourse/"> Apply Here</h1></a>
+       <div class="columns">
+          <div class="one_fourth">
+            <div class="title_header"><img id="icon" src="/images/bomb.svg">
+              <h2>Week 1: The Basics</h2>
+            </div>
+            <p>Three days of improv classes so you get can over yourself. Two days of intense self-reflection, fresh air, and exercise. A one-day orientation to the carpentry workshop.</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/construction.svg">
+              <h2>Week 2: Lumber</h2>
+            </div>
+            <p>Spend five mornings in the woodshop building your first table, using scrapped lumber salvaged from our local timber mill partners. In the afternoons, engage with discussions and field work focused on: urban forestry, craftsman philosophy, design aesthetics, and environmental ethics. </p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/construction.svg">
+              <h2>Week 3: Construction</h2>
+            </div>
+            <p>The theory and practice of Web Development for beginners. Join us for a single course, or a full-time, twelve-week boot camp. Topics will include: HTML5, CSS3, Python, Git, UX, Open-Source philosophy, Hacker culture, and human-computer interaction.</p>
+          </div>
+          <div class="one_fourth last">
+            <div class="title_header"><img src="/images/computer.svg">
+              <h2>Week 4: Hacking</h2>
+            </div>
+            <p>Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers! </p>
+          </div>
+          <div class="clear"></div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/computer.svg">
+              <h2>Week 5: Coding</h2>
+            </div>
+            <p>Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!Hack on Computers!</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/leaf.svg">
+              <h2>Week 6: Planting </h2>
+            </div>
+            <p>Start seeds, watch them grow. Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow. Start seeds, watch them grow.</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/leaf.svg">
+              <h2>Week 7: Growing </h2>
+            </div>
+            <p>Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.Start seeds, watch them grow.</p>
+          </div>
+          <div class="one_fourth last">
+            <div class="title_header"><img src="/images/compass.svg">
+              <h2>Week 8: Conclusion </h2>
+            </div>
+            <p> Spend 4 days on a wilderness survival expeditation and then write a story about the next year of your life. The last day is an all out party to celebrate the end of the summer. </p>
+          </div>
+        </div>
+
+      <div class="clear"></div>
+    </div>
+
+  </section>
+  <!-- /END #crashcourse-->
+
+  <!-- /BEGIN #gapyear-->
+  <section id="gapyear" class="content">
+    <div class="center">
+      <h2 class="title"><span>The Gap Year </span></h2>
+<h3 class="centered">
+Take a year, learn to Build, Program, Grow, speak Spanish and discover what you love to do. Before you get a diploma, get some experience. Make what is valuable and question the value of what is made.</h3>
+<p>
+More information on the Gap Year is coming soon.</p>
+
+<h1 class="apply"><a href="/gapyear/"> Apply Here</h1></a>
+
+
+
+
+      <div class="clear"></div>
+    </div>
+
+  </section>
+
+<!-- /END #gapyear-->
+
+  <!-- /BEGIN #summerforum-->
+  <section id="summerforum" class="content">
+    <div class="center">
+      <h2 class="title"><span>Saxifrage Forum</span></h2>
+<h3 class="centered">
+A thematic, week-long academic residency. Think, read, and deeply consider questions on the past and future of American education.</h3>
+<p>
+More information on the Saxifrage Forum is coming soon.</p>
+
+<h1 class="apply"><a href="/summerforum/"> Apply Here</h1></a>
+
+
+
+
+      <div class="clear"></div>
+    </div>
+
+  </section>
+
+<!-- /END #summerforum-->
+
+
+  <!-- /BEGIN #lectures-->
+
+
+  <section id="lectures" class="content">
+    <div class="center">
+      <h2 class="title"><span>Lectures</span></h2><h3 class="centered">
+Keep asking questions.</h3>
+<div class="narrowcentered"><p class="blue">
+The Saxifrage School hosts monthly lectures that focus on the intersection of theory and practice. </p></div>
+
+<h1 class="apply"><a href="http://www.facebook.com/pages/The-Saxifrage-School/217607328251808?sk=events"> RSVP</h1></a>
+       <div class="columns">
+          <div class="one_fourth">
+            <div class="title_header"><img id="icon" src="/images/foodtruck.svg">
+              <h2>Food Trucks 101: <br />Competition Law</h2>
+              <h6><em>October 3, 7:00 at Bar Marco</em></h6>
+            </div>
+            <p>These complex legal issues affect everything from banks and tech giants to small Pittsburgh food truck operators. 
+Food, drinks, and a one-night law school clinic about the food truck business with Christina Walsh from the Institute for Justice. This is leading up to the <a href="http://pghmobilefood.com">Food Truck Awareness Rally</a> on October 14th!</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/foodtruck.svg">
+              <h2>Food Trucks 201: <br />City Ordinances</h2>
+              <h6><em>October 10, 7:00 at Bar Marco</em></h6>
+            </div>
+            <p>A workshop on how to change the rules or at least know what they are. 
+Food, drinks, and a discussion on food truck legislation with Councilman Bill Peduto's Chief of Staff, Dan Gilman.  This is leading up to the <a href="http://pghmobilefood.com">Food Truck Awareness Rally</a> on October 14th!</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/pie.svg">
+              <h2>Coming Soon...</h2>
+            </div>
+            <p>Dates, names, and subjects for our upcoming lectures are coming soon!</p>
+          </div>
+          <div class="one_fourth last">
+            <div class="title_header"><img src="/images/logo.png">
+              <h2>Coming Soon...</h2>
+            </div>
+            <p>Dates, names, and subjects for our upcoming lectures are coming soon!</p>
+          </div>
+          <div class="clear"></div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/pie.svg">
+              <h2>Coming Soon...</h2>
+            </div>
+            <p>Dates, names, and subjects for our upcoming lectures are coming soon!</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/logo.png">
+              <h2>Coming Soon...</h2>
+            </div>
+            <p>Dates, names, and subjects for our upcoming lectures are coming soon!</p>
+          </div>
+          <div class="one_fourth">
+            <div class="title_header"><img src="/images/pie.svg">
+              <h2>Coming Soon...</h2>
+            </div>
+            <p>Dates, names, and subjects for our upcoming lectures are coming soon!</p>
+          </div>
+          <div class="one_fourth last">
+            <div class="title_header"><img src="/images/logo.png">
+              <h2>Coming Soon...</h2>
+            </div>
+            <p> Dates, names, and subjects for our upcoming lectures are coming soon!</p>
+          </div>
+        </div>
+
+      <div class="clear"></div>
+    </div>
+
+  </section>
+
+<!-- /END #lectures-->
+
+
+  <!-- /BEGIN #blog-->
+  <section id="blog" class="recent-blog content">
+    <div class="center">
+      <h2 class="title">
+        <span>Recent Blog Posts</span>
+      </h2>
+      <div class="excerpt" id="blogfeed" align="center" max-width="50">
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <!-- /END .center--> 
+  </section>
+  <!-- /END #blog-->
+
+
+    <!-- /BEGIN #team-->
+  <section id="team" class="about-us content">
+    <div class="center">
+      <h2 class="title"><span>The Team</span></h2>
+      <div class="columns">
+        <div class="one_third">
+          <div> <img height="20%" width="20%" class="person" src="/images/tim_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Timothy Cook</h2>
+              <div class="position">Founding Director</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Tim has been researching new directions in higher education for the past 5 years. His interests include urban agriculture, carpentry, web development, poetry, and cycling. He is charged with directing the work and vision of the Saxifrage School.</p>
+        </div>
+        <div class="one_third">
+          <div> <img class="person" src="/images/andrew_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Andrew Heffner</h2>
+              <div class="position">Director of Campus Partnerships</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Andrew is the communications expert at the Saxifrage School. Aside from studying Higher Education at the graduate level, Andrew is an serious student of culture: music, film, art, and literature. He is charged with building new partnerships, and taking care of current ones.</p>
+        </div>
+        <div class="one_third last">
+          <div> <img class="person" src="/images/alexa_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Alexa Belajac</h2>
+              <div class="position">Volunteer, New Projects</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Alexa is intensely creatively and serious about excellence. She thinks up new ways to move our project forward. She is a mother of three girls. </p>
+        </div>
+        <div class="clear"></div>
+        <!-- END one row -->
+        <div class="one_third">
+          <div> <img class="person" src="/images/thumbnail_person.jpg" alt="Image"/>
+            <div class="name-position">
+              <h2>Justin Seaman</h2>
+              <div class="position">Assistant to the Director</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Justin gets it done. More than you could ever know.</p>
+        </div>
+        <div class="one_third">
+          <div> <img class="person" src="/images/bryan_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Bryan Perry</h2>
+              <div class="position">President, Board of Directors</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt"> Bryan has worked for over a decade as a leader in the non-profit world, bringing fundraising and organizational leadership experience to our team. He currently works as an Assistant Director for <a href="http://www.opdc.org/about/staff/">Oakland Planning and Development Corporation.</a></p>
+        </div>
+        <div class="one_third last">
+          <div> <img class="person" src="/images/abigail_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Abigail Loughrey</h2>
+              <div class="position">Vice-President, Board of Directors</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Abigail studied Social and Comparative Analysis at the University of Pittsburgh and most recently worked for Pittsburgh Public Schools on their Gates Foundation funded initiative for teaching excellence.</p>
+        </div>
+        <div class="clear"></div>
+        <!-- END one row -->
+        <div class="one_third">
+          <div> <img class="person" src="/images/jess_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Jess Wilton</h2>
+              <div class="position">Board Member, Academic Planning</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Jess is completing a PhD program in Literary and Cultural Studies at Carnegie Mellon University.</p>
+        </div>
+        <div class="one_third">
+          <div> <img class="person" src="/images/chad_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Chad Whitacre</h2>
+              <div class="position">Programming Instructor</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Chad Whitacre is a programmer and entrepreneur with 12 years of professional experience. An active member of the open source community, Chad is the author of the Aspen web framework, as well as tools for mapping and database management. He is also the founder of <a href="http://gittip.com/">Gittip.com, a gift economy </a>. Chad holds a B.A. in Ancient Languages from Wheaton College (IL), and lives with his wife and four children in Ambridge, PA. His personal website is <a href="http://whit537.org/">www.whit537.org.</a>
+          </p> 
+        </div>
+        <div class="one_third last">
+          <div> <img class="person" src="/images/courtney_thumbnail.png" alt="Image"/>
+            <div class="name-position">
+              <h2>Courtney Williams</h2>
+              <div class="position">Agriculture Instructor</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <p class="excerpt">Courtney has worked on a variety of organic farms, both rural and urban. Most recently she was the lead educator and grower at the Pittsburgh Community Farm on the City’s north side. She comes from a family of Kentucky farmers and agricultural tool inventors. Her experience also includes significant practice in homesteading, work as a Doula, and studies in anthropology, agricultural history, and nutrition.</p>
+        </div>
+        <div class="clear"></div>
+        <!-- END one row --> 
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- /END .center--> 
+  </section>
+  <!-- /END #team -->
+  
+  <section id="contact" class="content">
+    <div class="center">
+      <h2 class="title"><span>Get in touch</span></h2>
+      <div class="columns">
+      <div style="font-family:Folks-Normal" class="one_third">
+        <h3>Our Location</h3>
+        <img src="/images/headquarters.png" alt="Map" >
+        <p>Penn Avenue, Pittsburgh, Pennsylvania, USA<br>
+          <br>
+          Tel: (412) 979-2141<br>
+          Email: <a href="mailto:andrew@saxifrageschool.org">andrew@saxifrageschool.org</a></p>
+        <h3>Follow Us</h3>
+        <ul class="bottom_social_icon">
+          <li class="twitter"><a href="http://twitter.com/saxifrageschool" class="tool_tip" title="Twitter">Twitter</a></li>
+          <li class="facebook"><a href="http://www.facebook.com/217607328251808" class="tool_tip" title="Facebook">Facebook</a></li>
+
+        </ul>
+      </div>
+      <!--
+      <div class="two_third last">
+        <h3>Contact Form</h3>
+        <form action="javascript:alert('success!');" id="ajax-contact-form" class="contactForm">
+          <div id="note"></div>
+          <p>
+            <input type="text" name="name" value="Your Name" onblur="if (this.value == ''){this.value = 'Your Name'; }" onfocus="if (this.value == 'Your Name') {this.value = '';}" >
+            &nbsp;
+            <input type="text" name="email" value="Your Email" onblur="if (this.value == ''){this.value = 'Your Email'; }" onfocus="if (this.value == 'Your Email') {this.value = '';}">
+            &nbsp;
+          </p>
+          <p>
+            <textarea name="message" rows="10" cols="20" onblur="if (this.value == ''){this.value = 'Your Message'; }" onfocus="if (this.value == 'Your Message') {this.value = '';}">Your Message</textarea>
+          </p>
+          <p>
+            <input type="submit" name="submit" class="submit" value="Send Message">
+          </p>
+        </form>
+      </div>
+    -->
+      <div class="clear"></div>
+      </div>
+    </div>
+    <!-- /END .center--> 
+  </section>
+  <section id="copyright" class="footer content">
+    <div class="center">
+      <p>&copy; The Saxifrage School, 2012. Design by <a href="http://themeforest.net/user/joefrey/?ref=joefrey" target="_blank">Joefrey</a></p>
+      <div class="clear"></div>
+    </div>
+  </section>
+</div>
+<script src="js/custom.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+$("#ajax-contact-form").submit(function(){
+
+var str = $(this).serialize();
+
+   $.ajax({
+   type: "POST",
+   url: "contact.php",
+   data: str,
+   success: function(msg){
+    
+$("#note").ajaxComplete(function(event, request, settings){
+
+if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+{
+result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+$("#fields").hide();
+}
+else
+{
+result = '<ul class="error">'+msg+'</ul>';
+}
+
+$(this).html(result);
+
+});
+
+}
+
+ });
+
+return false;
+
+});
+
+});
+</script> 
+
+<!--/border-->
+<div id="left-border"></div>
+<div id="right-border"></div>
+<div id="top-border"></div>
+<div id="bottom-border"></div>
+</body>
+</html>

@@ -78,7 +78,7 @@
 	z-index:59;
 	cursor:pointer;
 	text-indent:-9999px;
-	background:url(../images/arrows.png) no-repeat;
+	background:url(/images/arrows.png) no-repeat;
 	border:0;
 }
 
@@ -103,7 +103,7 @@ a.nivo-prevNav {
 	display:block;
 	width:5px;
 	height:5px;
-	background:url(../images/bullets2.png) no-repeat;
+	background:url(/images/bullets2.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:8px;
